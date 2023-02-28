@@ -7,7 +7,7 @@
 Создайте venv
 
 ```console
-py -m venv venv
+py -m venv .\backend\venv
 ```
 
 Активируйте venv
