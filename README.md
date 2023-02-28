@@ -1,13 +1,23 @@
 # Библиотека
 
-## Установите pipenv глобально
+## Настройка виртуального окружение
+
+### Windows
+
+Создайте venv
 
 ```console
-pip install pipenv
+py -m venv venv
 ```
 
-Потом запустите
+Активируйте venv
 
 ```console
-pipenv install
+.\backend\venv\Scripts\activate
+```
+
+Установите необходимые пакеты
+
+```console
+pip install -r .\backend\requirement.txt
 ```
