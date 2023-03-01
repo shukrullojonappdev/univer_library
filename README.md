@@ -7,17 +7,17 @@
 Создайте venv
 
 ```console
-py -m venv .\backend\venv
+py -m venv .\app\venv
 ```
 
 Активируйте venv
 
 ```console
-.\backend\venv\Scripts\activate
+.\app\venv\Scripts\activate
 ```
 
 Установите необходимые пакеты
 
 ```console
-pip install -r .\backend\requirement.txt
+pip install -r .\app\requirement.txt
 ```
