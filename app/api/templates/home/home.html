@@ -1,0 +1,22 @@
+{% extends "index.html" %} {% block home %} {% load static %} {% block css%}
+<link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}" />
+{% endblock %}
+<nav class="navbar fixed-top bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="{% url 'home' %}">Libriary</a>
+    <div class="dropdown">
+      <button
+        class="btn dropdown-toggle btn-logout"
+        type="button"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        {{ user.username }}
+      </button>
+      <ul class="dropdown-menu dropdown-menu-end">
+        <li><a class="dropdown-item" href="{% url 'logout' %}">Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+{% endblock %}
