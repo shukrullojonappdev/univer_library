@@ -1,12 +1,12 @@
-.person-btn {
-  width: 40px;
-  height: 40px;
-  border-radius: 50% !important;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.content {
+  padding-top: 60px;
 }
 
-.btn-logout {
-  width: 100px;
+.container {
+  height: 100%;
+}
+
+.card {
+  width: 18rem;
+  cursor: pointer;
 }
