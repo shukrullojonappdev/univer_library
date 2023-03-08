@@ -35,3 +35,6 @@ cd .\app\api\
 ```console
 py .\manage.py runserver
 ```
+
+## Во время разработки что бы обновить стили нажмите
+> Ctrl + F5
