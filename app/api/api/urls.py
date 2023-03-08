@@ -8,6 +8,7 @@ from .views import home
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('accounts.urls')),
-    path('', home, name='home')
+    path('', home, name='home'),
+    path('books/', include('books.urls'))
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
