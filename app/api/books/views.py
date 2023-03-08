@@ -9,5 +9,12 @@ def books(request):
     context = {
         'books': books
     }
-    print(context)
     return render(request, 'pages/books.html', context)
+
+@login_required(login_url='/accounts/login/')
+def book_info(request, id):
+    book = Book.objects.get(id=id)
+    context = {
+        'book': book
+    }
+    return render(request, 'pages/book-info.html', context)

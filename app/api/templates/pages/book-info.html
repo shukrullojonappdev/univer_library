@@ -1,0 +1,14 @@
+{% extends "index.html" %}
+{% load static %}
+{% block styles %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/book-info.css' %}" />
+{% endblock %}
+{% block content %}
+<div class="container">
+  <div class="content">
+    {% if book %}
+    {{ book.name }}
+    {% endif %}
+  </div>
+</div>
+{% endblock %}

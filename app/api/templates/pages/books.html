@@ -15,7 +15,7 @@
             <h6 class="card-text">Автор: {{ book.author }}</h6>
             <h6 class="card-text">Кол-стр: 100</h6>
             <h6 class="card-text">Статус: Читаю</h6>
-            <a href="#" class="card-link">more...</a>
+            <a href="{% url 'book-info' id=book.id %}" class="card-link">more...</a>
           </div>
         </div>
       </div>
